@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header__figure {
+    max-width: 20vw;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav input {
+    border: none;
+    outline: none;
+    background-color: #f5f5f5;
+    border-radius: 2rem;
+}
+
+.header__nav button {
+    width: 1.8rem;
+    border: none;
+    background: none;
+}
+
+.header__btn button {
+    border: 0.1rem solid #2A7AE4;
+    color: #2A7AE4;
+    background: none;
+    transition: .2s;
+}
+
+.header__btn button:hover {
+    background-color: #2A7AE4;
+    color: white;
+    cursor: pointer;
+}
+
+.section-banner {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.281)), linear-gradient(180deg, rgba(0, 0, 0, 0.164) 41.15%, rgba(0, 0, 0, 0.8) 100%), url(../img/banner-image.png);
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.section-banner button {
+    background-color: #2A7AE4;
+    color: white;
+    border: none;
+    transition: .2s;
+}
+
+.section-banner button:hover {
+    cursor: pointer;
+    background-color: #115fc4;
+}
+
+
+
+@media screen and (min-width: 320px) {
+    .header {
+        padding: 1rem 0rem;
+    }
+    
+    .header__figure {
+        max-width: 33%;
+    }
+
+    .header__figure img {
+        width: 100%;
+    }
+
+    .header__nav input {
+        display: none;
+    }
+
+    .header__nav button img {
+        width: 70%;
+    }
+
+    .header__btn button {
+        padding: .3rem 1.8rem;
+    }
+
+    .section-banner {
+        padding-top: 4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .section-banner .margin {
+        margin-bottom: .8rem;
+    }
+
+    .section-banner p {
+        font-size: .9rem;
+    }
+
+    .section-banner button {
+        padding: .6rem 1rem;
+        font-size: .9rem;
+    }
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .header__figure img {
+        width: 85%;
+    }
+
+    .header__nav input {
+        display: inherit;
+        padding: .5rem 2rem;
+        width: 35vw;
+    }
+
+    .header__nav button {
+        margin-left: -2rem;
+    }
+
+    .header__btn button {
+        padding: .5rem 2rem;
+    }
+
+    .section-banner {
+        padding-top: 5rem;
+    }
+
+    .section-banner h1 {
+        font-size: 2.4rem;
+    }
+
+    .section-banner p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .margin {
+        margin-left: 6rem;
+    }
+}
+
