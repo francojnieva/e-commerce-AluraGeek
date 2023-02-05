@@ -90,19 +90,19 @@ main {
   color: #464646;
 }
 
-.starwars__article .price {
+.price {
   color: #464646;
   font-weight: 600;
 }
 
-.starwars__article a {
+.see-product {
   text-decoration: none;
   color: #2a7ae4;
   font-weight: 600;
   font-size: 0.9rem;
 }
 
-.starwars__article a:hover {
+.see-product:hover {
     text-decoration: underline;
 }
 
@@ -170,15 +170,15 @@ main {
     font-size: 0.9rem;
   }
 
-  .starwars {
+  .section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.5rem;
   }
 
-  .starwars__article {
-    margin-bottom: 1rem;
+  .section__article {
+    margin-bottom: 1.5rem;
   }
 
   .hidden {
@@ -190,8 +190,12 @@ main {
   .margin {
     margin-left: .8rem;
   }
+
+  .section-banner h1 {
+    font-size: 1.8rem;
+  }
   
-    .starwars {
+  .section {
     gap: 1rem;
   }
 
@@ -251,27 +255,40 @@ main {
 
 @media screen and (min-width: 1024px) {
   .margin {
-    margin-left: 1.5rem;
+    margin-left: 2.5rem;
   }
 
   .title h2 {
-    margin-left: 2rem;
+    margin-left: 2.5rem;
     font-size: 1.5rem;
   }
 
   .title a {
-    margin-right: 2rem;
+    margin-right: 2.5rem;
     font-size: 1rem;
   }
 
-  .starwars {
+  .section {
     justify-content: space-evenly;
   }
 
 }
 
 @media screen and (min-width: 1300px) {
-    .hidden {
+  .margin {
+    margin-left: 1.5rem;
+  }
+
+  .title h2 {
+    margin-left: 1.5rem;
+  }
+
+  .title a {
+    margin-right: 1.5rem;
+  }
+  
+  
+  .hidden {
        display: initial;
     }
 }
