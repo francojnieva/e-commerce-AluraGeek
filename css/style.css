@@ -86,12 +86,11 @@ main {
   font-weight: 600;
 }
 
-.title h2 {
+.colour-nameProduct-h2-price-nav {
   color: #464646;
 }
 
 .price {
-  color: #464646;
   font-weight: 600;
 }
 
@@ -105,6 +104,51 @@ main {
 .see-product:hover {
     text-decoration: underline;
 }
+
+.footer {
+  color: #464646;
+}
+
+.footer__section1 {
+  background-color: #EAF2FD ;
+}
+
+.footer__section2 {
+  text-align: center;
+}
+
+.footer__section1 form input {
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: #464646;
+}
+
+.footer__section1 form textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 1rem;
+  color:#464646;
+}
+
+.footer__section1 form .form-btn {
+  background-color: #2a7ae4;
+  color: white;
+  border: none;
+  transition: 0.2s;
+}
+
+.footer__section1 form .form-btn:hover {
+  cursor: pointer;
+  background-color: #115fc4;
+}
+
+.footer__section2 p {
+  font-weight: 600;
+}
+
+
 
 @media screen and (min-width: 320px) {
   .header {
@@ -184,6 +228,66 @@ main {
   .hidden {
     display: none;
   }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__section1 ul {
+    list-style: none;
+    text-align: center;
+  }
+
+  .footer__section1 li {
+    margin: .7rem 0rem;
+  }
+
+  .footer__section1 a {
+    text-decoration: none;
+  }
+
+  .footer__section1 form {
+    width: 100%;
+    padding: .8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__section1 h3 {
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+  }
+
+  .footer__section1 form input {
+    width: 100%;
+    padding: .8rem;
+    margin-bottom: .8rem;
+  }
+
+  .footer__section1 form textarea {
+    padding: .8rem;
+    width: 100%;
+  }
+
+  .footer__section1 form .form-btn {
+    width: 45%;
+    margin-top: .7rem;
+  }
+
+  .footer__section2 {
+    padding: 1.5rem;
+  }
+
+  
 }
 
 @media screen and (min-width: 412px) {
@@ -251,6 +355,35 @@ main {
     margin-right: 1.5rem;
   }
 
+  .footer__section1 {
+    flex-direction: row;
+  }
+
+  .footer__section--nav {
+    width: 35%;
+  }
+
+  .footer__section--nav img {
+    margin-left: .5rem;
+  }
+
+  .footer__section--nav nav {
+    margin-left: 1rem;
+  }
+
+  .footer__section--nav ul {
+    text-align: start;
+  }
+
+  .footer__section1 form {
+    width: 65%;
+  }
+
+  .footer__section1 form .form-btn {
+    width: 30%;
+  }
+
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -272,23 +405,67 @@ main {
     justify-content: space-evenly;
   }
 
+  .footer__section--nav img {
+    margin-left: 2.8rem;
+  }
+
+  .footer__section--nav nav {
+    margin-left: 3.2rem;
+  }
+
+  .footer__section--nav a:hover {
+    text-decoration: underline;
+  }
+
+  .footer__section1 form input {
+    width: 94%;
+  }
+
+  .footer__section1 form textarea {
+    width: 94%;
+  }
+
 }
 
 @media screen and (min-width: 1300px) {
   .margin {
-    margin-left: 1.5rem;
+    margin-left: 3rem;
   }
 
   .title h2 {
-    margin-left: 1.5rem;
+    margin-left: 3rem;
   }
 
   .title a {
-    margin-right: 1.5rem;
+    margin-right: 3rem;
+  }
+
+  .section {
+    width: 95%;
+    margin: 0 auto;
   }
   
-  
   .hidden {
-       display: initial;
-    }
+    display: initial;
+  }
+
+  .footer__section--nav {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+  }
+
+  .footer__section--nav img {
+    width: 25%;
+    object-fit: contain;
+  }
+
+  .footer__section1 form {
+    width: 45%;
+  }
+
+
+  .footer__section1 form h3 {
+    font-size: 1.3rem;
+  }
 }
