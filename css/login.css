@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.form-login .btn {
+    background-color: #2a7ae4;
+    border: none;
+    color: white;
+    font-size: .9rem;
+    transition: 0.2s;
+}
+
+.form-login .btn:hover {
+    cursor: pointer;
+    background-color: #115fc4;
+}
+
+@media screen and (min-width: 320px) {
+    .header-login {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem .5rem;
+    }
+    
+    .header-login-btn {
+        display: none;
+    }
+    
+    .main__login {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form-login {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: .5rem;
+    }
+
+    .form-login h1 {
+        font-size: 1.2rem;
+        margin-bottom: .5rem;
+        color: #464646;
+    }
+
+    .form-login input {
+        width: 100%;
+        color: #464646;
+        font-size: .9rem;
+        margin: .5rem 0rem;
+        padding: .6rem;
+        border: none;
+        outline: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-login {
+        justify-content: flex-start;
+    }
+    
+    .form-login {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header-login {
+        padding-left: 7rem;
+    }
+    
+    .main__login {
+        height: 60vh;
+    }
+    .form-login {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    
+}
