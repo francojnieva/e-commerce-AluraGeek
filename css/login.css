@@ -5,6 +5,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.form-login input:focus {
+    box-shadow:  0 0 0px 1px #115fc4;
+}
+
 .form-login .btn {
     background-color: #2a7ae4;
     border: none;

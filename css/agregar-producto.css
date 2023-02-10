@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.main-add-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-add-product .btn {
+    background-color: #2a7ae4;
+    border: none;
+    color: white;
+    font-size: .9rem;
+    transition: 0.2s;
+}
+
+.main-add-product .btn:hover {
+    cursor: pointer;
+    background-color: #115fc4;
+}
+
+.main-add-product form input:focus {
+    box-shadow:  0 0 0px 1px #115fc4;
+}
+.main-add-product form textarea:focus {
+    box-shadow:  0 0 0px 1px #115fc4;
+}
+
+
+@media screen and (min-width: 320px) {
+    
+    .header__btn .login {
+      padding-left: .5rem;
+      padding-right: .5rem;
+    }
+    
+    .main-add-product form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: .5rem;
+        color: #464646;
+    }
+    
+    .main-add-product form h1 {
+        font-size: 1.2rem;
+        margin-bottom: .5rem;
+    }
+
+    .main-add-product input {
+        width: 100%;
+        color: #464646;
+        font-size: .9rem;
+        margin: .5rem 0rem;
+        padding: .6rem;
+        border: none;
+        outline: none;
+    }
+
+    .main-add-product textarea {
+        width: 100%;
+        color: #464646;
+        font-size: .9rem;
+        margin: .5rem 0rem;
+        padding: .6rem;
+        border: none;
+        outline: none;
+        resize: none;
+    }
+
+    
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+    .main-add-product form {
+        width: 45%;
+    }
+
+    .header__btn .login {
+        padding-left: .8rem;
+        padding-right: .8rem;
+      }
+}
