@@ -71,6 +71,10 @@
         justify-content: flex-start;
     }
     
+    .main__login {
+        height: 52vh;
+    }
+    
     .form-login {
         width: 50%;
     }

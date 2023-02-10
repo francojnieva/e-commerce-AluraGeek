@@ -78,9 +78,16 @@
 }
 
 @media screen and (min-width: 768px) {
+    .main-add-product {
+        height: 54vh;
+    }
 }
 
 @media screen and (min-width: 1024px) {
+    .main-add-product {
+        height: 70vh;
+    }
+
     .main-add-product form {
         width: 45%;
     }
